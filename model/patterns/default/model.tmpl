@@ -1,0 +1,84 @@
+<?php
+
+/*
+  Copyright (C) <{$year}>  {$author}  <{$email}>
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License, version 2, as
+  published by the Free Software Foundation.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+
+/**
+ * Main Model
+ * 
+ * @package WordPress
+ * @subpackage {$plugin_label}
+ * @author {$author} <{$email}>
+ */
+class {$prefix}model_Model {
+ 
+	/**
+     * View Node
+     * 
+     * @var {$prefix}_view_View
+     * @access protected 
+     */
+    protected $view_node;
+
+    /**
+     * Control Node
+     * 
+     * @var {$prefix}_control_Control
+     * @access protected
+     */
+    protected $control_node;
+    
+    /**
+     * Constructor
+	 * 
+	 * @access public
+	 * @param {$prefix}_control_Control $control
+     */
+    public function __construct($control) {
+
+        $this->control_node = $control;
+        
+        if (is_admin()){
+        }else{
+			
+		}
+    }
+    
+    /**
+     * Set View Node
+     * 
+	 * @access public
+     * @param {$prefix}_view_View $view_node
+     */
+    public function setViewNode($view_node){
+        
+        $this->view_node = $view_node;
+    }
+    
+    /**
+     * Render Nonce for Ajax requests
+     * 
+	 * @access public
+     * @return string Rendered Nonce
+     */
+    public function getNonce(){
+		
+        return wp_create_nonce({$plugin_name_upper}_PREFIX . 'ajax');
+    }
+}
+
+?>

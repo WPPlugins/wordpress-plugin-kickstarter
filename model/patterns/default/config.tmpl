@@ -1,0 +1,36 @@
+<?php
+
+/*
+  Copyright (C) <{$year}>  {$author}  <{$email}>
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License, version 2, as
+  published by the Free Software Foundation.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+
+define('{$plugin_name_upper}_PREFIX', '{$prefix}');
+define('{$plugin_name_upper}_BASE_DIR', dirname(__FILE__) . DIRECTORY_SEPARATOR);
+define('{$plugin_name_upper}_PLUGIN_NAME', basename({$plugin_name_upper}_BASE_DIR));
+define('{$plugin_name_upper}_BASE_URL', WP_PLUGIN_URL . '/' . {$plugin_name_upper}_PLUGIN_NAME . '/');
+define('{$plugin_name_upper}_HTML_DIR', realpath({$plugin_name_upper}_BASE_DIR . 'view/html') . DIRECTORY_SEPARATOR);
+define('{$plugin_name_upper}_JS_DIR', {$plugin_name_upper}_BASE_URL . 'view/js/');
+define('{$plugin_name_upper}_CSS_DIR',{$plugin_name_upper}_BASE_URL . 'view/css/');
+
+require_once('{$prefix}functions.php');
+
+
+//register autoload function
+spl_autoload_register('{$prefix}{$plugin_name}_autoload');
+
+load_plugin_textdomain('{$plugin_name}', false, {$plugin_name_upper}_BASE_DIR . '/langs');
+
+?>

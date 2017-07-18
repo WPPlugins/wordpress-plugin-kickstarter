@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : default-style.xml
+    Created on : August 11, 2011, 12:55 PM
+    Author     : Vasyl Martyniuk
+    Description:
+        This is default style for plugin kickstarter. You can create your own
+-->
+
+<style name="Default MVC">
+    <plugin_tree>
+        <file name="readme.txt"  content="mpks_pattern_DefaultMVC->renderReadMe" />
+        <file name="plugin_config.xml"  content="mpks_pattern_DefaultMVC->renderConfigXML" />
+        <file name="__ALLOW_REWRITING" />
+        <file name="__UPGRADED" />
+        <file name="{$plugin_name}.php" content="mpks_pattern_DefaultMVC->renderMainFile" />
+        <file name="{$prefix}config.php" content="mpks_pattern_DefaultMVC->renderConfigFile" />
+        <file name="{$prefix}functions.php" content="mpks_pattern_DefaultMVC->renderFunctionFile" />
+        <control>
+            <file name="control.php" content="mpks_pattern_DefaultMVC->renderControlFile" />
+        </control>
+        <model>
+            <file name="model.php" content="mpks_pattern_DefaultMVC->renderModelFile" />
+        </model>
+        <view>
+            <file name="view.php" content="mpks_pattern_DefaultMVC->renderViewFile" />
+            <css>
+                <file name="admin-general.css" content="mpks_pattern_DefaultMVC->renderCSSFile" />
+                <images />
+            </css>
+            <html>
+                <admin />
+                <front />
+            </html>
+            <js>
+                <file name="admin-general.js" content="mpks_pattern_DefaultMVC->renderJSFile" />
+            </js>
+        </view>
+		<langs/>
+    </plugin_tree>
+</style>

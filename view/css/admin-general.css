@@ -1,0 +1,142 @@
+/* 
+    Document   : admin-general
+    Created on : Aug 11, 2011, 11:00:16 AM
+    Author     : Vasyl Martyniuk
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.plugin-title{ 
+    float:left;
+    margin:0px 0 0 15px;
+}
+
+.plugin-logo{
+    background: url('images/logo.png') no-repeat;
+    float:left;
+    margin:10px 0 10px 30px;
+    width:40px;
+    height:40px;
+}
+
+.plugin-information{
+    display: none;
+}
+
+/* SEXY BOOKMARKS */
+div.sexy-bookmarks {
+    margin:10px 0 0 0;
+    clear: both;
+}
+
+div.sexy-bookmarks ul.socials {
+    background:transparent none;
+    border:0 none;
+    outline:0 none;
+}
+
+div.sexy-bookmarks ul.socials li {
+    display:inline;
+    float:left;
+    list-style-type:none;
+    margin:0;
+    height:29px;
+    width:55px;
+    cursor:pointer;
+    padding:0;
+    background-color:transparent;
+    border:0 none;
+    outline:0 none;
+}
+
+div.sexy-bookmarks ul.socials a {
+    display:block !important;
+    width:50px !important;
+    height:29px !important;
+    text-indent: -9999px !important;
+    background-color:transparent !important;
+}
+
+.sexy-mail {
+    background: url('images/share_friend.png') no-repeat bottom;
+}
+.sexy-mail:hover {
+    background: url('images/share_friend.png') no-repeat top;
+}
+
+.sexy-facebook {
+    background: url('images/share_facebook.png') no-repeat bottom;
+}
+.sexy-facebook:hover {
+    background: url('images/share_facebook.png') no-repeat top;
+}
+
+.sexy-twitter {
+    background: url('images/twitter.png') no-repeat bottom;
+}
+.sexy-twitter:hover {
+    background: url('images/twitter.png') no-repeat top;
+}
+
+.sexy-linkedin {
+    background: url('images/linkedin.png') no-repeat bottom;
+}
+.sexy-linkedin:hover {
+    background: url('images/linkedin.png') no-repeat top;
+}
+
+.dialog{
+    display: none;
+}
+
+#notice-message{
+    width: 70%;
+}
+
+.option-table{
+    width: 95%;
+}
+
+.option-table .input { width:280px; border:1px solid #aaa; padding:5px}
+.option-table .short-input { width:100px; border:1px solid #aaa; padding:5px}
+.option-table textarea {width:98%; border:1px solid #aaa; padding:5px; font-family:arial; }
+.option-table span.required { margin-left:3px; font-size:13px;color:red}
+
+.info{
+   font-weight: bold;
+}
+
+#saving-ind{
+    width: 16px;
+    height: 16px;
+    display: none;
+    margin-top: 5px;
+    margin-right: 5px;
+    float:right;
+    background: url('images/wpspin_light.gif') no-repeat;
+}
+#save-button{
+    float:right;
+}
+
+.change-style{
+    font-size: 10px;
+}
+
+.misc-style-section label{
+    font-size: 11px;
+}
+
+#current-style-display{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#style-select{
+    margin-top: 3px;
+}

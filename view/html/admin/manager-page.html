@@ -1,0 +1,213 @@
+<div class="wrap">
+    <form action="" method="post" id="mp-kickstarter">
+        <div class="plugin-logo"></div>
+        <div class="plugin-title"><h2>WordPress Plugin Kickstarter</h2></div>
+        <br class="clear" />
+        <div>
+            <div class="ui-widget" id="notice-message">
+                <div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;"> 
+                    <p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+                        <span style="color:#006505;" id="message">Plugin created successfully!</span></p>
+                </div>
+            </div>
+        </div>
+        <br class="clear" />
+
+        <input type="hidden" name="submited" value="1" />
+        <div class="postbox-container" style="width:70%;">
+            <div class="metabox-holder">	
+                <div class="meta-box-sortables">
+                    <div id="metabox-general" class="postbox">
+                        <div class="handlediv" title="Click to toggle"><br /></div>
+                        <h3 class="hndle"><span>Plugin Manager</span></h3>
+                        <div class="inside">
+                            <div class="plugin-information">
+                                <div>
+                                    <h4><a href="#" >General Informaiton</a></h4>
+                                    <div>
+                                        <table class="option-table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <span class="info">Plugin Name<span class="required">*</span>:</span>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="input" name="mp[kickstarter][name]" />
+                                                    </td>
+                                                    <td>
+                                                        <span class="info">Plugin Prefix<span class="required">*</span>:</span>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="short-input" name="mp[kickstarter][prefix]" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="info">Plugin Version:</span>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="short-input" name="mp[kickstarter][version]" />
+                                                    </td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="info">Author:</span>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="input" name="mp[kickstarter][author]" />
+                                                    </td>
+                                                    <td>
+                                                        <span class="info">Author E-mail:</span>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="input" name="mp[kickstarter][email]" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="info">Author URL:</span>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="input" name="mp[kickstarter][author_uri]" />
+                                                    </td>
+                                                    <td>
+                                                        <span class="info">Donate link:</span>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="input" name="mp[kickstarter][donation]" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="info">Contributors:</span>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="input" name="mp[kickstarter][contributors]" />
+                                                    </td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="info">Tags:</span>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="input" name="mp[kickstarter][tags]" />
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4><a href="#" >Description</a></h4>
+                                    <div>
+                                        <table class="option-table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <span class="info">Short Description:</span>
+                                                    </td>
+                                                    <td>
+                                                        <textarea name="mp[kickstarter][short_description]" rows="3"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="info">Long Description:</span>
+                                                    </td>
+                                                    <td>
+                                                        <textarea name="mp[kickstarter][long_description]" rows="8"></textarea>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4><a href="#" >Additional Informaiton</a></h4>
+                                    <div>
+                                        <table class="option-table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <span class="info">Requires at least:</span>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="short-input" name="mp[kickstarter][required]" />
+                                                    </td>
+                                                    <td>
+                                                        <span class="info">Tested up to:</span>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="short-input" name="mp[kickstarter][tested]" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="info">Requires PHP:</span>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="short-input" name="mp[kickstarter][php_version]" />
+                                                    </td>
+                                                    <td colspan="2">&nbsp;</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="postbox-container" style="width:20%; margin-left: 10px;">
+            <div class="metabox-holder">	
+                <div class="meta-box-sortables">
+                    <div id="submitdiv" class="postbox">
+                        <div class="handlediv" title="Click to toggle"><br /></div>
+                        <h3 class="hndle"><span>Save</span></h3>
+                        <div class="inside">
+                            <div id="minor-publishing">
+                                <div id="misc-publishing-actions">
+                                    <div class="misc-style-section"><label for="current_style">Current Style:</label>
+                                        <span id="current-style-display">Default</span>
+                                        <a href="#" class="change-style hide-if-no-js" tabindex="4">Change</a>
+                                        <div id="style-select" class="hide-if-js">
+                                            <select name="mp[kickstarter][style]" id="style" tabindex="4"></select>&nbsp;
+                                            <a href="#" class="hide-if-no-js button" id="style-ok">OK</a>
+                                            <a href="#" class="hide-if-no-js" id="style-cancel">Cancel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="submitbox" id="submitpost">
+                                <div id="major-publishing-actions">
+                                    <div id="publishing-action">
+                                        <div id="save-button"><input name="save" id="save" class="button-primary" value="Save" tabindex="5" type="submit" /></div>
+                                        <div id="saving-ind" title="Saving..."></div>
+                                    </div>
+                                    <br class="clear" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="metabox-general" class="postbox">
+                        <div class="handlediv" title="Click to toggle"><br /></div>
+                        <h3 class="hndle"><span>General Information</span></h3>
+                        <div class="inside">
+                            <p>This is a very beta version of Kickstarter and was created in few hours. If you are really interested in this plugin, please vote for it in <a href="http://wordpress.org/extend/plugins/wordpress-plugin-kickstarter/" target="_blank">WordPress Repository</a>. If there will be enough votes, than I'll provide stable, more clean and advanced version.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="dialog-rewrite-confirm" class="dialog" title="Rewrite existing plugin?">
+        <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 5px 0;"></span></p>
+    </div>
+</div>
